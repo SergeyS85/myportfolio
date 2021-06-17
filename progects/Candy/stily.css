@@ -85,7 +85,7 @@ li,a{
 "header_conteiner_slider"*/
 .header_conteiner_slider{
 	height: 520px;
-	background: url(img/baner.png) no-repeat 0 2px;
+	background: url(img/slide.png) no-repeat 0 2px;
 	position: relative;
 }
 .header_conteiner_slider span{
