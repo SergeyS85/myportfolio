@@ -1,5 +1,6 @@
 .myproject{
-	background-image: url(../img/myproject/bg.jpg);
+	background-image: url(../img/myproject/bg3.jpg);
+	background-size: cover;
 }
 .project{
 	display: flex;
