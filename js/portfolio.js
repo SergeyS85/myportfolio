@@ -1,6 +1,7 @@
 (function(){
+  let i = 0;
   function animationBg(){
-    let i = 0;
+    
     var background = document.querySelectorAll(".bg-container") 
     setInterval(function(){    
       i++;
