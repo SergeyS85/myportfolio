@@ -152,7 +152,7 @@ header{
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: 1s;
+	transition: 2s;
 }
 .show-bg{
 	opacity: 1; 
@@ -245,6 +245,7 @@ header{
 .block_foto{
 	width: 300px;
 	height: 300px;
+	margin-right: 10px;
 	overflow: hidden;
 	border-radius: 50%;
 	border: 1px solid #fff;
@@ -274,17 +275,32 @@ header{
    					/* ///MEDIA QUERY/// */
 
 @media(max-width: 782px){
-
+	.block_foto{
+		width: 150px;
+		height: 150px;
+	}
+	.header__banner{
+		flex-direction: column-reverse;
+	}
+	.right_content_box{
+		margin: 0 auto;
+	}
 }
 
 /* ///////// */
 @media(min-width: 783px) and (max-width: 900px){
-
+	.block_foto{
+		width: 200px;
+		height: 200px;
+	}
 }
 
 /* ///////// */
 @media(min-width: 901px) and (max-width: 1199px){
-
+	.block_foto{
+		width: 200px;
+		height: 200px;
+	}
 }
 
 /* ///////// */
