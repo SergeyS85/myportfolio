@@ -142,7 +142,7 @@ header{
 	font-family: Ubuntu,sans-serif;
 }
 .header__banner h1{
-	font-family: Lobster;
+	font-family: Lobster;;
 	letter-spacing: 3px;
 }
 .bg-container {
@@ -197,6 +197,7 @@ header{
 	width: 97px;
 	height: 97px;
 	background: url(../img/header_img/logo.png) no-repeat;
+	background-size: cover;
 }	
 .header__nav{
 	display: flex;
@@ -217,7 +218,37 @@ header{
 }
 .header__nav li:hover::after{
 	background: #e94e1b; 
-}	
+}
+.gamburgermenu{
+	display: none;
+	padding-top: 10px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 1000;
+}
+.gamburgermenu .gamburger{
+	position: relative;
+	display: block;
+	width: 25px;
+	height: 2px;
+	background: #fff;
+}
+.gamburgermenu .gamburger:before,
+.gamburgermenu .gamburger:after{
+	position: absolute;
+	background: #fff;
+	display: block;
+	content: "";
+	width: 25px;
+	height: 2px;
+}
+.gamburgermenu .gamburger:before{
+	top: -6px;
+}
+.gamburgermenu .gamburger:after{
+  top: 6px;
+}
 			/*\\\header_navigation\\\*/
 
 			/*///header__banner///*/
@@ -274,7 +305,36 @@ header{
 
    					/* ///MEDIA QUERY/// */
 
+@media(max-width: 401px){
+	.gamburgermenu{
+		display: block;
+	}
+	nav.header__navigation{
+		min-height: 80px;
+	}
+	.header__nav{
+		display: none;
+	}
+	
+}
 @media(max-width: 782px){
+	.header__navigation{
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.header__logo a{
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+	}
+	.left_content_box h1{
+		font-size: 16px;
+		text-align: center;
+	}
+	.left_content_box{
+		border-left: none;
+		border-bottom: 1px solid #E94E1B;
+	}
 	.block_foto{
 		width: 150px;
 		height: 150px;
@@ -285,6 +345,10 @@ header{
 	.right_content_box{
 		margin: 0 auto;
 	}
+	.block_skills{
+		display: none;
+	}
+	
 }
 
 /* ///////// */
