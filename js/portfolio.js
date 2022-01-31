@@ -1,6 +1,4 @@
 (function() {
-
-
     // //////////// Главная ///////////////
     let background = document.querySelectorAll(".bg-container")
     let i = 0;
@@ -23,25 +21,6 @@
         };
         background[i].classList.add('show-bg')
     }
-
-    // ///////////// Резюме /////////////////
-    let resume = document.querySelector('.resume');
-    let resume_block = document.querySelector('.resume_block')
-
-    function showResume() {
-        resume.addEventListener('click', function() {
-            resume_block.style.display = 'block'
-        })
-    }
-
-    function closeResume() {
-        let btnClose = document.querySelector('.close_resume');
-        btnClose.onclick = function() {
-            resume_block.style.display = 'none';
-        }
-    }
+    
     increment(animationBg)
-    // animationBg();
-    showResume();
-    closeResume();
 })()

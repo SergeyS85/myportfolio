@@ -12,6 +12,7 @@
 <body>
 	  <!-- HEADER/  --> 
 		<div class="wrapper">
+			<!-- Страница резюме -->
 			<div class="resume_block">
 				<div class="container container_img">
 					<div class="close_resume">
@@ -21,13 +22,27 @@
 					<div class="btn btn_download"><a href="https://sergeys85.github.io/myportfolio/Surzhik_Sergey.png" download="Surzhik_Sergey.png">Скачать</a></div>
 				</div>
 			</div>
-			<div class="gamburgermenu"><span class="gamburger"></span></div>
+			<!-- Спрятанное меню для меню гамбургер меньше 400px -->
+			<div class="container_hidemenu">
+				<div class="gamburger-hide-menu">
+				<ul class="header__nav-hidemenu">
+					<li><a href="index.html">Главная</a></li>
+					<li><a class='resume' href="#">Резюме</a></li>
+					<li><a href="myproject.html">Мои работы</a></li>
+				</ul>
+				</div>
+				<div class="gamburgermenu">
+					<span class="gamburger"></span>
+					<span class="gamburger"></span>
+					<span class="gamburger"></span>
+				</div>
+			</div>
 			<header>
 				<div class="background_container-1 bg-container show-bg"></div> 
 				<div class="background_container-2 bg-container"></div>
 				<div class="background_container-3 bg-container"></div>
 				<div class="background_container-4 bg-container"></div>			
-				<div class="bg_plashka"></div>
+				<!-- <div class="bg_plashka"></div> -->
 				<div class="container header_container">
 					<nav class="header__navigation">
 						<div class="header__logo"><a  href="index.html"></a></div>
@@ -61,5 +76,7 @@
 			</header>
 		</div> 
 <script src="js/portfolio.js"></script>	
+<script src="js/hidemenu.js"></script>	
+<script src="js/resume.js"></script>	
 </body>
 </html>
