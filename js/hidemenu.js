@@ -4,7 +4,7 @@
 	let burger       = document.querySelector('.gamburger')
 	burgermenu.addEventListener('click',function(){
 		hidemenu.style.transform = 'translateX(0px)'
-		gamburgermenu.style.top = '0px'
-		gamburgermenu.style.right = '0px'
+		burgermenu.style.top = '5px'
+		burgermenu.style.right = '5px'
 	})
 })()

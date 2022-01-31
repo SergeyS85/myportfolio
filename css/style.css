@@ -244,6 +244,7 @@ header{
 	top: 20px;
 	right: -40px;
 	z-index: 1000;
+	transition: 1s;
 }
 .gamburgermenu .gamburger{
 	display: block;
