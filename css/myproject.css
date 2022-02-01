@@ -1,6 +1,7 @@
 .myproject{
 	background-image: url(../img/myproject/bg3.jpg);
 	background-size: cover;
+	/*overflow-y: scroll;*/
 }
 .project{
 	display: flex;

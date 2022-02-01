@@ -1,11 +1,14 @@
 // ///////////// Резюме /////////////////
-    let resume = document.querySelector('.resume');
+    let resume = document.querySelectorAll('.resume');
     let resume_block = document.querySelector('.resume_block')
 
     function showResume() {
-        resume.addEventListener('click', function() {
+        for(let i = 0;i < resume.length;i++){
+            resume[i].addEventListener('click', function() {
             resume_block.style.display = 'block'
-        })
+          })
+        }
+        
     }
 
     function closeResume() {

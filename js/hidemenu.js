@@ -1,5 +1,5 @@
 (function(){
-	let burgermenu   = document.querySelector('.gamburgermenu')
+	let burgermenu   = document.querySelector('.container_gamburger')
 	let hidemenu     = document.querySelector('.container_hidemenu')
 	let burger       = document.querySelector('.gamburger')
 	burgermenu.addEventListener('click',function(){
