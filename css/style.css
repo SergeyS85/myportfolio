@@ -296,7 +296,6 @@ header{
 .block_foto{
 	width: 300px;
 	height: 300px;
-	margin-right: 10px;
 	overflow: hidden;
 	border-radius: 50%;
 	border: 1px solid #fff;
@@ -308,6 +307,9 @@ header{
 }
 .block_foto img{
 	transform: translateY(-30%);
+}
+.block_skills{
+	margin-left: 10px;
 }
 .block_skills li{
 	transition: 0.5s;
@@ -341,6 +343,8 @@ header{
 	}
 	nav.header__navigation{
 		min-height: 80px;
+		flex-direction: row;
+		justify-content: flex-end;
 	}
 	.header__nav{
 		display: none;
