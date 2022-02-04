@@ -189,23 +189,7 @@ header{
 	transform: translateX(-50%);
 }
 			/*///header_navigation///*/
-.container_hidemenu{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	background: rgb(200,200,200,.4);
-	width: 150px;
-	height: 100%;
-	transition: 1s;
-	transform: translateX(-150px);
-	display: none;
-}
-.gamburger-hide-menu{	
-	position: absolute;
-	top: 0;
-	left: 0;	
-}
+
 .header__navigation{
 	min-height: 150px;
 	max-width: 1620px;
@@ -239,6 +223,25 @@ header{
 .header__nav li:hover::after{
 	background: #e94e1b; 
 }
+/*//////////// hide menu ///////////////*/
+
+.container_hidemenu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background: rgb(200,200,200,.4);
+	width: 150px;
+	height: 100%;
+	transition: 1s;
+	transform: translateX(-150px);
+	display: none;
+}
+.gamburger-hide-menu{	
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
 .container_gamburger{
 	width: 25px;
 	height: 18px;
@@ -259,6 +262,8 @@ header{
 	width: 25px;
 	height: 2px;
 	background: #fff;
+	transform-origin: center center;
+	transition: 1s;
 }
 .gamburger:nth-child(1){
 	top: 1px;
@@ -269,6 +274,46 @@ header{
 .gamburger:nth-child(3){
 	top: 13px;
 }
+/*.gambAnim{
+	top: 7px;
+}*/
+.gambAnim:nth-child(1){
+  /*animation: gamburger_top 0.7s ease-in 0.4s 1 normal forwards;*/
+  top: 7px;
+  transform: rotateZ(45deg);
+}
+.gambAnim:nth-child(2){
+	opacity: 0;
+  /*animation: gamburger_center 0.4s step-end 0.4s 1 normal forwards;*/
+}
+.gambAnim:nth-child(3){
+	/*animation: gamburger_bottom 0.7s ease-in 0.4s 1 normal forwards;*/
+	top: 7px;
+	transform: rotateZ(-45deg);
+}
+/*@keyframes gamburger_top{
+	0% {top: 1px;}
+	25%{top: 5px;}
+	50%{top: 7px;}
+	50%{transform: rotateZ(1deg);}
+	70%{transform: rotateZ(20deg);}
+	100%{transform: rotateZ(45deg);
+		   top: 7px;
+	}
+}
+@keyframes gamburger_center{
+	100%{opacity: 0;}
+}
+@keyframes gamburger_bottom{
+	0% {top: 13px;}
+	25%{top: 5px;}
+	50%{top: 7px;}
+	50%{transform: rotateZ(-1deg);}
+	70%{transform: rotateZ(-20deg);}
+	100%{transform: rotateZ(-45deg);
+		   top: 7px;
+	}
+}*/
 			/*\\\header_navigation\\\*/
 
 			/*///header__banner///*/
@@ -282,6 +327,21 @@ header{
 	border-left: 1px solid #E94E1B;
 	padding-left: 10px;
 }	
+.left_content_box span{
+	display: inline-block;
+
+}
+.span_shadow_animate{
+	transition: 3s;
+}
+.span_shadow_animate:after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #50B6E5;
+	box-shadow: 0px 0px 7px 5px #50B6E5;
+}
 /*\\\left_content_box\\\*/
 
 
