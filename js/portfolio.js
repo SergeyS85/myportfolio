@@ -18,8 +18,6 @@
         spanShadow[i].classList.add('span_shadow_animate')
     }
 
-
-
     // //////////////////////////////////////
     let promise = new Promise(function(resolve,reject){
         setInterval(() => {
