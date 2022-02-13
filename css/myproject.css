@@ -1,5 +1,5 @@
 .myproject{
-	background-image: url(../img/myproject/bg3.jpg);
+	background-image: url(../img/myproject/bg3.webp);
 	background-attachment: fixed;
 	background-size: cover;
 	/*overflow-y: scroll;*/
@@ -38,47 +38,52 @@
 }
 
 .project_block:nth-child(1){
-	background: url(../img/myproject/candy.png) no-repeat;
+	background: url(../img/myproject/candy.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(2){
-	background: url(../img/myproject/alexis.png) no-repeat;
+	background: url(../img/myproject/alexis.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(3){
-	background: url(../img/myproject/jetro.png) no-repeat;
+	background: url(../img/myproject/jetro.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(4){
-	background: url(../img/myproject/creativia.png) no-repeat;
+	background: url(../img/myproject/creativia.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(5){
-	background: url(../img/myproject/blog.png) no-repeat;
+	background: url(../img/myproject/blog.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(6){
-	background: url(../img/myproject/mmg.png) no-repeat;
+	background: url(../img/myproject/mmg.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(7){
-	background: url(../img/myproject/dart_service.png) no-repeat;
+	background: url(../img/myproject/dart_service.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(8){
-	background: url(../img/myproject/culinar.png) no-repeat;
+	background: url(../img/myproject/culinar.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
 }
 .project_block:nth-child(9){
-	background: url(../img/myproject/elegant.png) no-repeat;
+	background: url(../img/myproject/elegant.webp) no-repeat;
 	background-size: cover;
 	background-position: center;	
+}
+.project_block:nth-child(10){
+	background: url(../img/myproject/Ilon_Mask.webp) no-repeat;
+	background-size: cover;
+	background-position: center;
 }
